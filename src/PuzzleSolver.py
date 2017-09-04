@@ -39,7 +39,6 @@ class PuzzleSolver:
                 routeNode       = [roomObject.getId(), roomObject.getName(), containedItems]
                 route.append(routeNode)
                 items           = [x for x in items if x not in containedItems]
-                print items
                 roomsToVisit    = [roomId for roomId in roomObject.getAvailableRooms() if roomId in self.rooms] 
                 roomObject.cleanRooms()
 
